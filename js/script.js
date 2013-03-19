@@ -7,7 +7,7 @@
   $("pre > code").each(function(i, e) {hljs.highlightBlock(e)});
   
   $(".snippet").attr("data-toggle-state", "content");
-  $("body").css("background-color", generateRGB(0, 255, 150, 200));
+  $("body").css("background-color", generateRGB(0, 255, 150, 220));
 });
 
 $(document).on("click", ".toggleCode", function () {
