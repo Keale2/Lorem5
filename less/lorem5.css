@@ -1,0 +1,17 @@
+pre code {
+  background: rgba(0, 0, 0, .3);
+  display: block;
+  color: rgba(0, 0, 0, .4);
+}
+
+pre .tag {
+  color: rgba(255, 255, 255, .2);
+}
+
+.attribute {
+  color: rgba(0, 0, 0, .7);
+}
+
+pre .title {
+  color: rgba(255, 255, 255, .9);
+}

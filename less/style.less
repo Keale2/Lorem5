@@ -1,0 +1,134 @@
+body {
+  background-color: #fff;
+  color: rgba(0, 0, 0, .7);
+  font-family: 'Rokkitt', serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 20px 0;
+}
+
+body[style] {
+  -webkit-transition: background-color 2s;
+}
+
+:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 30pt;
+  margin: 0;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .2);
+}
+
+a:link, a:visited, a:active {
+  color: rgba(255, 255, 255, .9);
+}
+
+a:hover {
+  color: rgba(255, 255, 255, .6);
+}
+
+header {
+  padding: 0 20px;
+}
+
+header h1 {
+	font-size: 50pt;
+	margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+header nav li + li {
+  margin-left: 10px;
+}
+
+header nav a {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 15px;
+  color: rgba(255, 255, 255, .8);
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+code {
+  overflow: auto;
+}
+
+.snippet {
+  padding: 20px
+}
+
+.snippet {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.snippet + .snippet {
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.snippet > h1 {
+  color: rgba(255, 255, 255, .9);
+  font-size: 40pt;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.snippet > div {
+  background-color: rgba(0, 0, 0, .1);
+  padding: 20px;
+}
+
+.toggleContent {
+  cursor: pointer;
+  padding: 3px 10px 0 10px;
+}
+
+.toggleCode {
+  cursor: pointer;
+  padding: 3px 10px 0 10px;
+}
+
+.content {
+  border-radius: 0 5px 5px 5px;
+}
+
+.code {
+  border-radius: 5px;
+}
+
+.snippet[data-toggle-state=content] .toggleContent {
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 5px 5px 0 0;
+  color: rgba(255, 255, 255, .9);
+  cursor: auto;
+}
+
+.snippet[data-toggle-state=code] .toggleCode {
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 5px 5px 0 0;
+  color: rgba(255, 255, 255, .9);
+  cursor: auto;
+}
+
+.snippet[data-toggle-state=content] > .code {
+  display: none;
+}
+
+.snippet[data-toggle-state=code] > .content {
+  display: none;
+}
